@@ -2,8 +2,6 @@
 
 #include "Kas/Event/Event.hh"
 
-#include <string>
-
 namespace kas {
 
 	class KAS_API MouseMovedEvent : public Event

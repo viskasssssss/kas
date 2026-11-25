@@ -2,8 +2,6 @@
 
 #include "Kas/Event/Event.hh"
 
-#include <string>
-
 namespace kas {
 
 	class KAS_API KeyEvent : public Event

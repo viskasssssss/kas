@@ -1,3 +1,5 @@
+#include "kpch.hh"
+
 #include "Kas/Event/KeyEvent.hh"
 
 #include <sstream>

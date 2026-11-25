@@ -1,3 +1,5 @@
+#include "kpch.hh"
+
 #include "Kas/Core/Log.hh"
 
 #include <spdlog/sinks/stdout_color_sinks.h>

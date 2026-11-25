@@ -1,9 +1,8 @@
 #pragma once
 
-#include "Kas/Core/Defines.hh"
+#include "kpch.hh"
 
-#include <string>
-#include <functional>
+#include "Kas/Core/Defines.hh"
 
 namespace kas {
     enum class EventType {

@@ -2,7 +2,8 @@
 
 #include "Kas/Core/Defines.hh"
 
-#include <memory>
+#include "kpch.hh"
+
 #include <spdlog/spdlog.h>
 #include <spdlog/fmt/ostr.h>
 
