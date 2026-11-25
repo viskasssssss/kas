@@ -1,5 +1,7 @@
 #pragma once
 
+#define BIT(x) (1 << x)
+
 #ifdef _WIN32
     #define KAS_PLATFORM_WINDOWS
     #ifdef KAS_BUILD_DLL
