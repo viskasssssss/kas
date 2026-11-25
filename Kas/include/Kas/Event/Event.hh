@@ -29,16 +29,15 @@ namespace kas {
 #define EVENT_CLASS_CATEGORY(category) virtual int get_category_flags() const override { return category; }
 
     class KAS_API Event {
-        friend class EventDispatcher;
     public:
+        bool handled = false;
+        
         virtual EventType get_event_type() const = 0;
         virtual const char* get_name() const = 0;
         virtual int get_category_flags() const = 0;
         virtual std::string to_string() const { return get_name(); };
 
         bool is_in_category(EventCategory category);
-    protected:
-        bool m_handled = false;
     };
 
     class EventDispatcher
@@ -53,7 +52,7 @@ namespace kas {
         {
             if (m_event.get_event_type() == T::get_static_type())
             {
-                m_event.m_handled = func(*(T*)&m_event);
+                m_event.handled = func(*(T*)&m_event);
                 return true;
             }
             return false;

@@ -9,6 +9,10 @@ add_library(Kas SHARED
     src/Event/KeyEvent.cc
     src/Event/MouseEvent.cc
 
+    # src/Layer
+    src/Layer/Layer.cc
+    src/Layer/LayerStack.cc
+
     # src/OS
     src/OS/Window.cc
 
