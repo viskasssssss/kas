@@ -14,6 +14,9 @@
 #include <ostream>
 #include <sstream>
 
+#include "Kas/Core/Defines.hh"
+#include "Kas/Core/Log.hh"
+
 #ifdef _WIN32
     #include <Windows.h>
 #endif

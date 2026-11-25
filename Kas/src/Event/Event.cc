@@ -11,15 +11,4 @@ namespace kas {
     // EventDispatcher
     EventDispatcher::EventDispatcher(Event& event)
 			: m_event(event) {}
-
-	template<typename T>
-	bool EventDispatcher::dispatch(EventFn<T> func)
-	{
-		if (m_event.get_event_type() == T::get_static_type())
-		{
-			m_event.m_handled = func(*(T*)&m_event);
-			return true;
-		}
-		return false;
-	}
 }
